@@ -1,14 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using E_BCD.Template;
 
 namespace E_BCD.Iniciante.Sequencial
 {
-    internal static class B1003
+    internal class B1003 : Problema
     {
-        public static void PMain()
+        public override void PMain()
         {
             Console.WriteLine("\nProblema 1003 - Soma Simples\n");
 

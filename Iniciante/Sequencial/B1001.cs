@@ -1,8 +1,10 @@
-﻿namespace E_BCD.Iniciante.Sequencial
+﻿using E_BCD.Template;
+
+namespace E_BCD.Iniciante.Sequencial
 {
-    internal static class B1001
+    internal class B1001 : Problema
     {
-        public static void PMain()
+        public override void PMain()
         {
             Console.WriteLine("\nProblema 1001 - Extremamente Básico");
 

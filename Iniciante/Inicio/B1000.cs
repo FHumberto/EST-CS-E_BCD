@@ -1,8 +1,10 @@
-﻿namespace E_BCD.Iniciante.Inicio
+﻿using E_BCD.Template;
+
+namespace E_BCD.Iniciante.Inicio
 {
-    internal static class B1000
+    internal class B1000 : Problema
     {
-        public static void PMain()
+        public override void PMain()
         {
             Console.WriteLine("\nProblema 1000 - Hello World!\n");
 

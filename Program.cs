@@ -1,5 +1,6 @@
 ﻿using E_BCD.Iniciante.Inicio;
 using E_BCD.Iniciante.Sequencial;
+using E_BCD.Template;
 
 namespace E_BCD
 {
@@ -7,69 +8,51 @@ namespace E_BCD
     {
         public static void Main()
         {
+            //* Lista de problemas.
+            Dictionary<string, Problema> listaProblemas = new()
+            {
+                { "1000", new B1000() },
+                { "1001", new B1001() },
+                { "1002", new B1002() },
+                { "1003", new B1003() },
+                { "1004", new B1004() },
+            };
+
             string? comando;
             do
             {
                 Console.WriteLine("Informe o número do problema: [1000, 1001, ...]");
-                int problema = Convert.ToInt32(Console.ReadLine());
+                string? problema = Console.ReadLine();
 
-                switch (problema)
-                {
-                    case 1000:
-                        do
-                        {
-                            B1000.PMain();
-                            Mensagem(0, problema);
-                            comando = Console.ReadLine();
-                        } while (comando == "S" || comando == "s");
-                        break;
+                //* Encontra e executa o problema informado.
+                ExecutarProblema(listaProblemas, problema);
 
-                    case 1001:
-                        do
-                        {
-                            B1001.PMain();
-                            Mensagem(0, problema);
-                            comando = Console.ReadLine();
-                        } while (comando == "S" || comando == "s");
-                        break;
-
-                    case 1002:
-                        do
-                        {
-                            B1002.PMain();
-                            Mensagem(0, problema);
-                            comando = Console.ReadLine();
-                        } while (comando == "S" || comando == "s");
-                        break;
-
-                    case 1003:
-                        do
-                        {
-                            B1003.PMain();
-                            Mensagem(0, problema);
-                            comando = Console.ReadLine();
-                        } while (comando == "S" || comando == "s");
-                        break;
-
-                    case 1004:
-                        do
-                        {
-                            B1004.PMain();
-                            Mensagem(0, problema);
-                            comando = Console.ReadLine();
-                        } while (comando == "S" || comando == "s");
-                        break;
-
-                    default:
-                        Console.WriteLine("O problema informado não existe.");
-                        break;
-                }
                 Mensagem(1);
                 comando = Console.ReadLine();
             } while (comando == "S" || comando == "s");
         }
 
-        public static void Mensagem(int operacao, int problema = default)
+        public static void ExecutarProblema(Dictionary<string, Problema> problemas, string problema)
+        {
+            string? comando;
+            do
+            {
+                if (problemas.TryGetValue(problema, out Problema? problemaEncontrado))
+                {
+                    problemaEncontrado.PMain();
+                }
+                else
+                {
+                    Console.WriteLine();
+                    Console.WriteLine($"O problema informado não existe.");
+                }
+
+                Mensagem(0, problema);
+                comando = Console.ReadLine();
+            } while (comando == "S" || comando == "s");
+        }
+
+        public static void Mensagem(int operacao, string? problema = null)
         {
             if (operacao == 0)
             {
@@ -79,7 +62,7 @@ namespace E_BCD
             else
             {
                 Console.WriteLine();
-                Console.WriteLine("Deseja executar o programa novamente? [S/N]");
+                Console.WriteLine("Deseja executar o todo o programa novamente? [S/N]");
             }
         }
     }

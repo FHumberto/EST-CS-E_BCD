@@ -1,10 +1,12 @@
 ﻿using System.Globalization;
 
+using E_BCD.Template;
+
 namespace E_BCD.Iniciante.Sequencial
 {
-    internal static class B1002
+    internal class B1002 : Problema
     {
-        public static void PMain()
+        public override void PMain()
         {
             Console.WriteLine("\nProblema 1002 - Área do Círculo\n");
 
