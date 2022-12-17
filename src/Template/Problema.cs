@@ -1,4 +1,4 @@
-﻿namespace E_BCD.Template
+﻿namespace E_BCD.src.Template
 {
     internal abstract class Problema
     {

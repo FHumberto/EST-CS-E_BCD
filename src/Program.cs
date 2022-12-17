@@ -1,8 +1,8 @@
-﻿using E_BCD.Iniciante.Inicio;
-using E_BCD.Iniciante.Sequencial;
-using E_BCD.Template;
+﻿using E_BCD.src.Iniciante.Inicio;
+using E_BCD.src.Iniciante.Sequencial;
+using E_BCD.src.Template;
 
-namespace E_BCD
+namespace E_BCD.src
 {
     internal static class Program
     {
@@ -39,7 +39,12 @@ namespace E_BCD
                 { "1005", new B1005() },
                 { "1006", new B1006() },
                 { "1007", new B1007() },
-                { "1008", new B1008() }
+                { "1008", new B1008() },
+                { "1009", new B1009() },
+                { "1010", new B1010() },
+                { "1011", new B1011() },
+                { "1012", new B1012() },
+                { "1013", new B1013() }
             };
 
             string? comando;

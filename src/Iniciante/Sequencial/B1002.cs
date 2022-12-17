@@ -1,8 +1,8 @@
 ﻿using System.Globalization;
 
-using E_BCD.Template;
+using E_BCD.src.Template;
 
-namespace E_BCD.Iniciante.Sequencial
+namespace E_BCD.src.Iniciante.Sequencial
 {
     internal class B1002 : Problema
     {

@@ -1,6 +1,6 @@
-﻿using E_BCD.Template;
+﻿using E_BCD.src.Template;
 
-namespace E_BCD.Iniciante.Inicio
+namespace E_BCD.src.Iniciante.Inicio
 {
     internal class B1000 : Problema
     {

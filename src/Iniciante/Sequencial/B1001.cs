@@ -1,6 +1,6 @@
-﻿using E_BCD.Template;
+﻿using E_BCD.src.Template;
 
-namespace E_BCD.Iniciante.Sequencial
+namespace E_BCD.src.Iniciante.Sequencial
 {
     internal class B1001 : Problema
     {
@@ -11,7 +11,7 @@ namespace E_BCD.Iniciante.Sequencial
             int a = int.Parse(Console.ReadLine());
             int b = int.Parse(Console.ReadLine());
 
-            Console.WriteLine($"X = {(a + b)}");
+            Console.WriteLine($"X = {a + b}");
         }
     }
 }

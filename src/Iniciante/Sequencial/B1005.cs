@@ -1,8 +1,8 @@
 ﻿using System.Globalization;
 
-using E_BCD.Template;
+using E_BCD.src.Template;
 
-namespace E_BCD.Iniciante.Sequencial
+namespace E_BCD.src.Iniciante.Sequencial
 {
     internal class B1005 : Problema
     {
@@ -13,7 +13,7 @@ namespace E_BCD.Iniciante.Sequencial
             double a = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
             double b = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
 
-            double media = ((a * 3.5) + (b * 7.5)) / 11;
+            double media = (a * 3.5 + b * 7.5) / 11;
 
             Console.WriteLine($"MEDIA = {media.ToString("F5", CultureInfo.InvariantCulture)}");
         }
