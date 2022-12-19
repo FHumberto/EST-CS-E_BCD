@@ -5,8 +5,8 @@ Esse repositório contem todas as minhas soluções dos exercícios do Beecrowd 
 </p>
 
 <p align="center">
-  <a href="#%EF%B8%8F-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#%EF%B8%8F-perfil">Perfil</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-perfil">Perfil</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#%EF%B8%8F-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#%EF%B8%8F-demo">Demo</a>&nbsp;&nbsp;&nbsp;
 </p>
@@ -22,11 +22,11 @@ Você pode acessar o meu perfil do beecrowd **[aqui](https://www.beecrowd.com.br
 
 ## 🏗️ Tecnologias
 
-Esse projeto foi desenvolvido com as seguintes tecnologias:
+Esse projeto foi desenvolvido com:
 
 - C#;
 - .NET 7.0;
 
 ## ⚙️ DEMO
 
-![Demo](Project/Demo.gif)
+![Demo](project/Demo.gif)
