@@ -1,4 +1,5 @@
 ﻿using E_BCD.src.Iniciante.Inicio;
+using E_BCD.src.Iniciante.Selecao;
 using E_BCD.src.Iniciante.Sequencial;
 using E_BCD.src.Template;
 
@@ -51,7 +52,9 @@ namespace E_BCD.src
                 { "1017", new B1017() },
                 { "1018", new B1018() },
                 { "1019", new B1019() },
-                { "1020", new B1020() }
+                { "1020", new B1020() },
+                { "1035", new B1035() },
+                { "1036", new B1036() }
             };
 
             string? comando;
